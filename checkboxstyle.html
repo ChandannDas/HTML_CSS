@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          #terms{
+            border: 2px solid;
+            padding: 5px;
+            width: 600px;
+            height: 180px;
+            margin-bottom: 20px;
+            overflow: auto;
+          }
+          #select:checked~span{
+            color: green;
+          }
+         #select~span{
+            color: red;
+         }
+        </style>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body class="container">
+        <form >
+        <h2>Terms</h2>
+          <select name="categorey" size="4" multiple>
+              <option>selecte categoery</option>
+              <optgroup label="electronics">
+              <option>TV</option>
+              <OPtion>rADIO</OPtion>
+        </optgroup>
+       <optgroup label="fashion">
+             <option value="shirt">dress</option>
+             <option value="kurtti">punjabi</option>
+       </optgroup>
+          </select>
+          <button> register</button>
+        </form>
+    </body>
+</html>

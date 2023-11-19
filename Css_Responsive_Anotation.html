@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <title>orientation</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <head>
+        <style>
+           ul{
+            list-style: none;
+            border: 2px solid darkcyan;
+            padding: 30px;
+            background-color: darkcyan;
+            color: white;
+            border-radius: 20px;
+            font-size: 20px;
+            
+           } 
+          @media screen and (orientation:landscape) {
+            li{
+                display: inline;
+                margin-right: 40px; 
+            }
+            body{
+                background-image:linear-gradient(rgb(223, 120, 120),rgb(228, 228, 100)rgb(85, 85, 228));
+            }
+        }
+        @media screen and (orientation:portrait) {
+            li{
+                display: block;
+                margin-bottom: 30px;
+            }
+            ul{
+                width: 50px;
+                margin-left: -80px;
+               transition: 3s;
+            }
+            .ap{
+              display: none;
+            }
+            ul:hover{
+                margin-left: 0px;
+               transition: 3s;
+            }
+          }
+          
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><span class="bi bi-facebook"></span> <span class="ap">facebook</span></li>
+              <li><span class="bi bi-instagram"></span> <span class="ap">instagram</span></li>
+              <li><span class="bi bi-twitter"></span>  <span class="ap">twitter</span></li>
+              <li><span class="bi bi-linkedin"></span> <span class="ap">linkedin</span></li>
+              <li><span class="bi bi-youtube"></span> <span class="ap">bi-youtube</span></li>
+              <li><span class="bi bi-telegram"></span> <span class="ap">telegram</span></li>
+              <li><span class="bi bi-twitter"></span>  <span class="ap">twitter</span></li>
+              <li><span class="bi bi-linkedin"></span> <span class="ap">linkedin</span></li>
+            </ul>
+        </nav>
+    </body>
+</html>

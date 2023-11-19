@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<title>chandan html project</title>
+<head>
+    <style>
+       header{
+        text-align: center;
+        border: 3px solid black;
+        height: 100%;
+        width: 100%;
+        padding: 2px;
+       color: black;
+       background-color: tomato;
+       border-radius: 20px;
+       
+       }
+       section{
+         display: grid;
+         grid-template-columns: 3fr 7fr 2fr;
+         height: 500px;
+         margin-top: 50px;
+       }
+       nav li{
+        list-style-type: none;
+        border: 2px solid black;
+        background-color: tomato;
+        color: black;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 200px;
+        border-radius: 20px;
+       font-size: 20px;
+
+       }
+       a{
+        text-decoration: none;
+       }
+       h3{
+        font-size: 40px;
+        color: black;
+        background-color: white;
+        width: 150px;
+        border: 2px solid black;
+        border-radius: 10px;
+       }
+       article{
+         border: 2px solid black;
+         width: 300px ;
+         height: 50px;
+         color: black;
+         padding: 2px;
+         background-color:aqua;
+         margin-top: 50px;
+      border-radius: 20px;
+       }
+     figure{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+     }
+     h2{
+      color: red;
+     text-align: center;
+      padding: 2px;
+      
+     }
+     aside{
+      border: 2px solid black;
+      background-color: tomato;
+      color: black;
+      width: 100px;
+      height: 100px;
+      font-size: 30px;
+      padding: 5px;
+      border-radius: 20px;
+     }
+     footer{
+      border: 2px solid black;
+      width:100%;
+      height:100;
+      background-color: tomato;
+   border-radius: 20px;
+     }
+    #container{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    }
+    #card-body{
+      margin-right: 90px;
+      padding: 10px;
+     border: 2px solid black;
+  margin: 20px;
+  background-color: cyan;
+  border-radius: 20px;
+    }
+     span{
+      size: 20px;
+      color: red;
+     }
+    #card{
+      font-size: 20px;
+      color: black;
+    }
+    #h3{
+      border: 2px solid black ;
+      border-radius: 20px;
+    }
+    iframe{
+      margin-top: 20px;
+      height: 450px;
+      width: 1000px;
+      border: none;
+    }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+   <header>
+     <h1>Chandan Shopping side</h1>
+     <div>
+      <p>offer</p>
+       <marquee  direction="" scrollamount="25" onmouseover="this.stop()" onmouseout="this.start()">
+        
+  <img src="./assets/amzonpic - Copy.PNG" height="100px" width="100%">
+       </marquee>
+     </div>
+    </header>
+   <section>
+       <nav>
+        <h3>menu <span class="bi bi-house-add-fill"></span></h3>
+        <ul>
+          <li><a href="./assets/byk.jpg" target="frameBody">home</a></li>
+          <li><a href="https://www.youtube.com/watch?v=QXJyMpxd210" target="frameBody">youtube</a></li>
+          <li><a href="./assets/Rose.jpg" target="frameBody">fashion</a></li>
+          <li><a href="./assets/Shirtss.jpg" target="frameBody">cosmetics</a></li>
+          <li><a href="./assets/Shoes.jpg" target="frameBody">gifts</a></li>
+        </ul>
+       </nav>
+       <main>
+        <div>
+          <p>
+              <iframe name="frameBody"></iframe>
+          </p>
+      </div>
+       </main>
+       <aside>
+        <div>
+          <marquee   direction="row" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+     <img src="./assets/amzonpic - Copy.PNG" height="100px" width="100%">
+          </marquee>
+        </div>
+    </aside>
+   </section>
+    <footer>
+         <div id="container">
+          <div id="card-body">
+          <div id="card">
+              <p>shirt</p>
+              </div>
+              <div id="body">
+                  <img src="./assets/Shirtss.jpg" height="200px" width="200px">
+                  <p>&#8377; 5000.34 </p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+              </div>
+              </div>
+              <div id="card-body">
+              <div id="card">
+                <p>shirt</p>
+                </div>
+                <div id="body">
+                    <img src="./assets/Shoes.jpg" height="200px" width="200px">
+                    <p>&#8377; 5000.34 </p>
+                    <p>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-fill"></span>
+                      <span class="bi bi-star-half"></span>
+                    </p>
+                </div>
+              </div>
+                 <div id="card-body">
+                <div id="card">
+                 <p>watch</p>
+                </div>
+                <div id="body">
+                  <img src="./assets/spekeer.jpg" height="200px" width="200px">
+                  <p>&#8377: 4000.23</p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+                </div>
+              </div>
+              <div id="card-body">
+                <div id="card">
+                 <p>watch</p>
+                </div>
+                <div id="body">
+                  <img src="./assets/byk.jpg" height="200px" width="200px">
+                  <p>&#8377: 4000.23</p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+                </div>
+              </div>
+              <div id="card-body">
+                <div id="card">
+                 <p>watch</p>
+                </div>
+                <div id="body">
+                  <img src="./assets/Rose.jpg" height="200px" width="200px">
+                  <p>&#8377: 4000.23</p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+                </div>
+              </div>
+              <div id="card-body">
+                <div id="card">
+                 <p>watch</p>
+                </div>
+                <div id="body">
+                  <img src="./assets/gift.jpg" height="200px" width="200px">
+                  <p>&#8377: 4000.23</p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+                </div>
+              </div>
+              <div id="card-body">
+                <div id="card">
+                 <p>watch</p>
+                </div>
+                <div id="body">
+                  <img src="./assets/watch.jpg" height="200px" width="200px">
+                  <p>&#8377: 4000.23</p>
+                  <p>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                  </p>
+                </div>
+              </div>
+          </div>
+
+         </footer> 
+    </footer>
+    <div>
+      <iframe name="frameBody"></iframe>
+    </div>
+</body>
+</html>

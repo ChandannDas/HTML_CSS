@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <title>pseudo</title>
+    <head>
+    <style>
+        #username:focus+span{
+            display: inline;
+        }
+        #username+span{
+            display: none;
+        }
+        #username:focus{
+            border: 2px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+        #un:required{
+            border: 2px solid red;
+        }
+        #un:required+span{
+            display: block;
+            
+        }
+        #un:valid+span{
+            display: none;
+        }
+        #un:optional{
+            border: 2px solid green;
+        }
+        #mobile:valid+span{
+            display: none;
+        }
+        #mobile:invalid+span{
+            display: block;
+            color: red;
+        }
+        #mobile:valid{
+         border: 2px solid green;
+        }
+        #mobile:invalid{
+            border: 2px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+       #age:in-range{
+        border: 2px solid green;
+        box-shadow: 2px 2px 2px green;
+       }
+       #age:out-of-range{
+        border: 2px solid red;
+        box-shadow: 2px 2px 2px red;
+       }
+       #age:in-range+span{
+        display: none;
+       }
+       #age:out-of-range+span{
+        display: block;
+        color: red;
+       }
+    </style>
+    </head>
+    <body>
+    <h2>Register User</h2>
+    <dl>
+        <dt>username</dt>
+        <dd>
+            <input type="text" name="text" placeholder="name in block letter" id="username">
+            <span>name in block letter</span>
+        </dd>
+    </dl>
+    <h2>Register User</h2>
+    <dl>
+        <dt>Mobile Number</dt>
+        <dd>
+            <input type="text" name="text"  id="mobile" pattern="\+91\d{10}">
+            <span>invalid mobile</span>
+        </dd>
+    </dl>
+    <dl>
+        <dt>Age</dt>
+        <dd>
+           <input type="number" value="15" min="15" max="25" id="age">
+           <span>Age 15 to 25 only</span>
+        </dd>
+    </dl>
+    </body>
+</html>

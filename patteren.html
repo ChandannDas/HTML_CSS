@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <title>google</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <head>
+  <style>
+    button{
+        size: 40;
+    }
+    input{
+       border: 2px;
+      width: 550px;
+      background-color: aquamarine;
+    }
+    #search{
+        border: 2px solid;
+        padding: 5px;
+        width: 580px;
+    }
+    span{
+        color: green;
+        background:black;
+    }
+    button{
+        background-color: red;
+    }
+  </style>
+    </head>
+    <body>
+        <div align="center">
+            <h2>Google</h2>
+            <div id="search">
+            <input type="text" size="40" list="topics">
+            <span class="bi bi-search"></span>
+        </div>
+            <datalist id="topics">
+               <option> html tutorial</option>
+               <option>api tutorial</option>
+               <option> Java tutorial</option>
+               <option> paython tutorial</option>
+            </datalist>
+            <p><button size="30">search</button></p>
+        </div>
+    </body>
+</html>

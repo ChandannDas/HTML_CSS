@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <title>element</title>
+    <head>
+    <style>
+        ol{
+            list-style: none;
+            display: flex;
+        }
+        ol li::before{
+            content:"-->";
+        }
+        li:first-child::before{
+            content: "site-map ==>";
+        }
+        li:last-child::after{
+            content:"special @";
+        }
+        p{
+            text-align: justify;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::first-letter {
+            color: green;
+            font-size: 30px;
+            font-family: Arial;
+        }
+        p::selection{
+            color: yellowgreen;
+        }
+        input::placeholder{
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+      <ol>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+        <li>blog</li>
+      </ol> 
+      <div>
+    <p>Depending on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.
+        </p>
+      </div>
+      <input type="text" name="text" placeholder="Enter ur name">
+    </body>
+</html>
